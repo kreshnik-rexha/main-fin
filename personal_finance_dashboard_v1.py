@@ -3,14 +3,12 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-if not st.session_state['authenticated']:
-    pwd = st.text_input("Enter password to access dashboard:", type="password")
+# --- AUTHENTICATION ---
+PASSWORD = "secure123"
+
     if pwd == PASSWORD:
-        st.session_state['authenticated'] = True
         st.success("Authenticated. Please reload the page.")
-        st.stop()
     else:
-        st.stop()
 
 # --- PAGE SETUP ---
 st.set_page_config(page_title="Finance Dashboard", layout="wide")

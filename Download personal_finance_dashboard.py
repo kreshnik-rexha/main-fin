@@ -10,8 +10,9 @@ st.session_state['authenticated'] = st.session_state.get('authenticated', False)
 if not st.session_state['authenticated']:
     pwd = st.text_input("Enter password to access dashboard:", type="password")
     if pwd == PASSWORD:
-        st.session_state['authenticated'] = True
-        st.experimental_rerun()
+    st.session_state['authenticated'] = True
+    st.success("Authenticated. Please reload the page.")
+    st.stop()
     else:
         st.stop()
 

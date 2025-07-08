@@ -3,10 +3,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# --- AUTHENTICATION ---
-PASSWORD = "secure123"
-st.session_state['authenticated'] = st.session_state.get('authenticated', False)
-
 if not st.session_state['authenticated']:
     pwd = st.text_input("Enter password to access dashboard:", type="password")
     if pwd == PASSWORD:

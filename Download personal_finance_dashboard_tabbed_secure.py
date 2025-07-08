@@ -12,9 +12,9 @@ if not st.session_state['authenticated']:
     if pwd == PASSWORD:
         st.session_state['authenticated'] = True
         st.success("Authenticated. Please reload the page.")
-            st.stop()
+        st.stop()
     else:
-            st.stop()
+        st.stop()
 
 # --- PAGE SETUP ---
 st.set_page_config(page_title="Finance Dashboard", layout="wide")

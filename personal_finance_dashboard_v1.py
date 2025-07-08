@@ -4,9 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # --- AUTHENTICATION ---
-PASSWORD = "secure123"
 
-    if pwd == PASSWORD:
         st.success("Authenticated. Please reload the page.")
     else:
 

@@ -3,11 +3,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# --- AUTHENTICATION ---
-
-        st.success("Authenticated. Please reload the page.")
-    else:
-
 # --- PAGE SETUP ---
 st.set_page_config(page_title="Finance Dashboard", layout="wide")
 
